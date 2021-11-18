@@ -1,0 +1,1 @@
+mvn clean test -DsuiteXmlFile=C:\Explore\KP\APC\APCFramework\src\main\java\kaiser\apc\resources\testng.xml
