@@ -20,7 +20,7 @@ public WebDriver initializeDriver() throws IOException
 {
 	
  prop= new Properties();
-FileInputStream fis=new FileInputStream("C:\\HCL\\Explore\\22Oct2021\\ExtentFramework\\src\\main\\java\\resources\\data.properties");
+FileInputStream fis=new FileInputStream("C:\\Explore\\KP\\APC\\APCFramework\\src\\main\\java\\kaiser\\apc\\resources\\data.properties");
 
 prop.load(fis);
 String browserName=prop.getProperty("browser");
@@ -28,7 +28,7 @@ System.out.println(browserName);
 
 if(browserName.equals("chrome"))
 {
-	 System.setProperty("webdriver.chrome.driver", "C:\\HCL\\Explore\\22Oct2021\\ExtentFramework\\src\\main\\java\\resources\\chromedriver.exe");
+	 System.setProperty("webdriver.chrome.driver", "C:\\Explore\\KP\\APC\\APCFramework\\src\\main\\java\\kaiser\\apc\\resources\\chromedriver.exe");
 	driver= new ChromeDriver();
 		//execute in chrome driver
 	

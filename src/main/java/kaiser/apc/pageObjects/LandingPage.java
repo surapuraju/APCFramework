@@ -7,47 +7,38 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class LandingPage {
-
 	
 	public WebDriver driver;
 	
-	By signin=By.cssSelector("a[href*='sign_in']");
-	By title=By.cssSelector(".text-center>h2");
-	By NavBar=By.cssSelector(".nav.navbar-nav.navbar-right>li>a");
-	
-	
-	
-	
-	
+	By logIn=By.id("submitBtnID");
+	By userName=By.id("username");
+	By passWord=By.id("password");
+		
 	public LandingPage(WebDriver driver) {
 		// TODO Auto-generated constructor stub
 		
-		this.driver=driver;
-		
+		this.driver=driver;	
 	}
 
-
-
-
-	public LoginPage getLogin()
+	//public LoginPage getLogin()
+	//{
+	//	 driver.findElement(logIn).click();
+	//	 LoginPage lp=new LoginPage(driver);
+	//	 return lp;		 
+	//} 
+	
+	public WebElement getPassword()
 	{
-		 driver.findElement(signin).click();
-		 LoginPage lp=new LoginPage(driver);
-		 return lp;
-		 
-		 
-		 
-		 
-	}
-	public WebElement getNavigationBar()
-	{
-		return driver.findElement(NavBar);
-	}
-	public WebElement getTitle()
-	{
-		return driver.findElement(title);
+		return driver.findElement(passWord);
 	}
 	
+	public WebElement getUsername()
+	{
+		return driver.findElement(userName);
+	}
 	
-	
+	public WebElement getLogin()
+	{
+		return driver.findElement(logIn);
+	}
 }

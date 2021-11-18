@@ -6,10 +6,9 @@
 	</listeners>
 	<test thread-count="5" name="Test">
 		<classes>
-			<class name="kaiser.apc.AppTest" />
-			<class name="kaiser.apc.validateTitle" />
+
 			<class name="kaiser.apc.HomePage" />
-			<class name="kaiser.apc.validateNavigationBar" />
+
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
