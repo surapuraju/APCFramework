@@ -39,7 +39,8 @@ public class HomePage extends base{
 		l.getPassword().sendKeys(Password);
 		l.getLogin().click();
 		
-		log.info("Driver is initialized");
+		log.info("User is Logged: " + Username);
+		log.info("Log in data used from @DataProvider by: " + Username);
 	}
 
 	@AfterTest
@@ -59,6 +60,8 @@ public class HomePage extends base{
 		//0th row
 		data[0][0]="B160381";
 		data[0][1]="mmQQmm11";
+		
+		
 		
 		return data;
 	}
