@@ -1,11 +1,6 @@
 package pageObjects;
 
 //Raju Surapuraju
-//Raju Surapuraju
-//Raju Surapuraju
-//Raju Surapuraju
-//Raju Surapuraju
-//Raju Surapuraju
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
