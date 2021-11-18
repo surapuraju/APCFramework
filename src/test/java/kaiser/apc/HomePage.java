@@ -38,6 +38,8 @@ public class HomePage extends base{
 		l.getUsername().sendKeys(Username);
 		l.getPassword().sendKeys(Password);
 		l.getLogin().click();
+		
+		log.info("Driver is initialized");
 	}
 
 	@AfterTest

@@ -18,51 +18,44 @@ import org.openqa.selenium.TakesScreenshot;
 
 public class base {
 
-	public  WebDriver driver;
+	public WebDriver driver;
 	public Properties prop;
-public WebDriver initializeDriver() throws IOException
-{
-	
- prop= new Properties();
-FileInputStream fis=new FileInputStream("C:\\Explore\\KP\\APC\\APCFramework\\src\\main\\java\\kaiser\\apc\\resources\\data.properties");
 
-prop.load(fis);
-String browserName=prop.getProperty("browser");
-System.out.println(browserName);
+	public WebDriver initializeDriver() throws IOException {
 
-if(browserName.equals("chrome"))
-{
-	 System.setProperty("webdriver.chrome.driver", "C:\\Explore\\KP\\APC\\APCFramework\\src\\main\\java\\kaiser\\apc\\resources\\chromedriver.exe");
-	driver= new ChromeDriver();
-		//execute in chrome driver
-	
-}
-else if (browserName.equals("firefox"))
-{
-	 driver= new FirefoxDriver();
-	//firefox code
-}
-else if (browserName.equals("IE"))
-{
-//	IE code
-}
+		prop = new Properties();
+		String dir = System.getProperty("user.dir");
+		//System.out.println(dir);
+		FileInputStream fis = new FileInputStream(dir + "\\src\\main\\java\\kaiser\\apc\\resources\\data.properties");
 
-driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-return driver;
+		prop.load(fis);
+		String browserName = prop.getProperty("browser");
+		System.out.println(browserName);
 
+		if (browserName.equals("chrome")) {
+			System.setProperty("webdriver.chrome.driver", dir + "\\src\\main\\java\\kaiser\\apc\\resources\\chromedriver.exe");
+			driver = new ChromeDriver();
+			// execute in chrome driver
 
-}
+		} else if (browserName.equals("firefox")) {
+			driver = new FirefoxDriver();
+			// firefox code
+		} else if (browserName.equals("IE")) {
+			//	IE code
+		}
 
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		return driver;
 
-public String getScreenShotPath(String testCaseName,WebDriver driver) throws IOException
-{
-	TakesScreenshot ts=(TakesScreenshot) driver;
-	File source =ts.getScreenshotAs(OutputType.FILE);
-	String destinationFile = System.getProperty("user.dir")+"\\reports\\"+testCaseName+".png";
-	FileUtils.copyFile(source,new File(destinationFile));
-	return destinationFile;
+	}
 
+	public String getScreenShotPath(String testCaseName, WebDriver driver) throws IOException {
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		String destinationFile = System.getProperty("user.dir") + "\\reports\\" + testCaseName + ".png";
+		FileUtils.copyFile(source, new File(destinationFile));
+		return destinationFile;
 
-}
+	}
 
 }
