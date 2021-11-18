@@ -1,0 +1,8 @@
+19:14:03.323 [main] INFO  resources.base - Driver is initialized
+19:14:05.705 [main] INFO  resources.base - Navigated to Home page
+19:14:05.750 [main] INFO  resources.base - Successfully validated Text message
+19:14:09.714 [main] INFO  resources.base - Navigation Bar is displayed
+08:39:33.476 [main] INFO  resources.base - Restrcited User
+08:39:35.194 [main] INFO  resources.base - Non restricted user
+08:39:37.528 [main] INFO  resources.base - Driver is initialized
+08:39:39.603 [main] INFO  resources.base - Navigated to Home page
