@@ -1,5 +1,7 @@
 package kaiser.apc;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 
 import org.apache.logging.log4j.LogManager;
@@ -40,7 +42,7 @@ public void initialize() throws IOException
 		LandingPage l=new LandingPage(driver);
 	
 		//compare the text from the browser with actual text.- Error..
-	    Assert.assertTrue(l.getNavigationBar().isDisplayed());
+	    AssertJUnit.assertTrue(l.getNavigationBar().isDisplayed());
 	    log.info("Navigation Bar is displayed");
 		 System.out.println("Test completed");
 	 //   Assert.assertFalse(false);

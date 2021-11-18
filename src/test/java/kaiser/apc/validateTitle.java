@@ -1,5 +1,7 @@
 package kaiser.apc;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 
 import org.apache.logging.log4j.LogManager;
@@ -35,7 +37,7 @@ public class validateTitle extends base{
 		// creating object to that class and invoke methods of it
 		LandingPage l=new LandingPage(driver);
 		//compare the text from the browser with actual text.- Error..
-		Assert.assertEquals(l.getTitle().getText(), "FEATURED COURSES");
+		AssertJUnit.assertEquals(l.getTitle().getText(), "FEATURED COURSES");
 		 log.info("Successfully validated Text message");
 		 System.out.println("Test completed");
 		 
