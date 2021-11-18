@@ -1,4 +1,4 @@
-package Academy;
+package kaiser.apc;
 
 import java.io.IOException;
 
@@ -11,8 +11,8 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
-import resources.ExtentReporterNG;
-import resources.base;
+import kaiser.apc.resources.ExtentReporterNG;
+import kaiser.apc.resources.base;
 
 public class Listeners extends base implements ITestListener {
 	ExtentTest test;

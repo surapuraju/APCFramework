@@ -1,4 +1,4 @@
-package resources;
+package kaiser.apc.resources;
 
 import java.io.File;
 import java.io.FileInputStream;

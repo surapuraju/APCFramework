@@ -1,4 +1,4 @@
-package Academy;
+package kaiser.apc;
 
 /**
  * Hello world!

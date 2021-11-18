@@ -1,4 +1,4 @@
-package pageObjects;
+package kaiser.apc.pageObjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
