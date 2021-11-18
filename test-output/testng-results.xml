@@ -2,30 +2,30 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-11-12T09:07:27 IST" name="Default suite" finished-at="2021-11-12T09:07:41 IST" duration-ms="13288">
+  <suite started-at="2021-11-18T09:49:07 IST" name="Suite" finished-at="2021-11-18T09:49:18 IST" duration-ms="11646">
     <groups>
     </groups>
-    <test started-at="2021-11-12T09:07:27 IST" name="Default test" finished-at="2021-11-12T09:07:41 IST" duration-ms="13288">
-      <class name="Academy.validateTitle">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Academy.validateTitle@2f4854d6]" started-at="2021-11-12T09:07:33 IST" name="initialize" finished-at="2021-11-12T09:07:36 IST" duration-ms="3072" status="PASS">
+    <test started-at="2021-11-18T09:49:07 IST" name="Test" finished-at="2021-11-18T09:49:18 IST" duration-ms="11646">
+      <class name="kaiser.apc.validateNavigationBar">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:kaiser.apc.validateNavigationBar@162be91c]" started-at="2021-11-18T09:49:08 IST" name="initialize" finished-at="2021-11-18T09:49:11 IST" duration-ms="2385" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="validateAppTitle()[pri:0, instance:Academy.validateTitle@2f4854d6]" started-at="2021-11-12T09:07:40 IST" name="validateAppTitle" finished-at="2021-11-12T09:07:40 IST" duration-ms="48" status="PASS">
+        <test-method signature="validateAppNavBar()[pri:0, instance:kaiser.apc.validateNavigationBar@162be91c]" started-at="2021-11-18T09:49:18 IST" name="validateAppNavBar" finished-at="2021-11-18T09:49:18 IST" duration-ms="77" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateAppTitle -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Academy.validateTitle@2f4854d6]" started-at="2021-11-12T09:07:40 IST" name="teardown" finished-at="2021-11-12T09:07:41 IST" duration-ms="172" status="PASS">
+        </test-method> <!-- validateAppNavBar -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:kaiser.apc.validateNavigationBar@162be91c]" started-at="2021-11-18T09:49:18 IST" name="teardown" finished-at="2021-11-18T09:49:18 IST" duration-ms="222" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- Academy.validateTitle -->
-      <class name="Academy.HomePage">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Academy.HomePage@4e4efc1b]" started-at="2021-11-12T09:07:27 IST" name="initialize" finished-at="2021-11-12T09:07:30 IST" duration-ms="2446" status="PASS">
+      </class> <!-- kaiser.apc.validateNavigationBar -->
+      <class name="kaiser.apc.HomePage">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:kaiser.apc.HomePage@659eef7]" started-at="2021-11-18T09:49:07 IST" name="initialize" finished-at="2021-11-18T09:49:08 IST" duration-ms="1679" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="basePageNavigation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Academy.HomePage@4e4efc1b]" started-at="2021-11-12T09:07:36 IST" name="basePageNavigation" data-provider="getData" finished-at="2021-11-12T09:07:38 IST" duration-ms="2473" status="PASS">
+        <test-method signature="basePageNavigation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:kaiser.apc.HomePage@659eef7]" started-at="2021-11-18T09:49:13 IST" name="basePageNavigation" data-provider="getData" finished-at="2021-11-18T09:49:16 IST" duration-ms="2559" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -46,7 +46,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePageNavigation -->
-        <test-method signature="basePageNavigation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Academy.HomePage@4e4efc1b]" started-at="2021-11-12T09:07:38 IST" name="basePageNavigation" data-provider="getData" finished-at="2021-11-12T09:07:40 IST" duration-ms="1932" status="PASS">
+        <test-method signature="basePageNavigation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:kaiser.apc.HomePage@659eef7]" started-at="2021-11-18T09:49:16 IST" name="basePageNavigation" data-provider="getData" finished-at="2021-11-18T09:49:18 IST" duration-ms="1803" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -67,25 +67,25 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePageNavigation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Academy.HomePage@4e4efc1b]" started-at="2021-11-12T09:07:40 IST" name="teardown" finished-at="2021-11-12T09:07:40 IST" duration-ms="111" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:kaiser.apc.HomePage@659eef7]" started-at="2021-11-18T09:49:18 IST" name="teardown" finished-at="2021-11-18T09:49:18 IST" duration-ms="82" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- Academy.HomePage -->
-      <class name="Academy.validateNavigationBar">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Academy.validateNavigationBar@61d9efe0]" started-at="2021-11-12T09:07:30 IST" name="initialize" finished-at="2021-11-12T09:07:33 IST" duration-ms="2780" status="PASS">
+      </class> <!-- kaiser.apc.HomePage -->
+      <class name="kaiser.apc.validateTitle">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:kaiser.apc.validateTitle@6e4de19b]" started-at="2021-11-18T09:49:11 IST" name="initialize" finished-at="2021-11-18T09:49:13 IST" duration-ms="2567" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="validateAppNavBar()[pri:0, instance:Academy.validateNavigationBar@61d9efe0]" started-at="2021-11-12T09:07:40 IST" name="validateAppNavBar" finished-at="2021-11-12T09:07:40 IST" duration-ms="79" status="PASS">
+        <test-method signature="validateAppTitle()[pri:0, instance:kaiser.apc.validateTitle@6e4de19b]" started-at="2021-11-18T09:49:13 IST" name="validateAppTitle" finished-at="2021-11-18T09:49:13 IST" duration-ms="53" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateAppNavBar -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Academy.validateNavigationBar@61d9efe0]" started-at="2021-11-12T09:07:40 IST" name="teardown" finished-at="2021-11-12T09:07:40 IST" duration-ms="126" status="PASS">
+        </test-method> <!-- validateAppTitle -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:kaiser.apc.validateTitle@6e4de19b]" started-at="2021-11-18T09:49:18 IST" name="teardown" finished-at="2021-11-18T09:49:18 IST" duration-ms="167" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- Academy.validateNavigationBar -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- kaiser.apc.validateTitle -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
